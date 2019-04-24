@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Number input functions</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+  <h1>Number input functions</h1>
+
+  <hr />
+
+  <p class="form-group">
+    <label for="items-count">Items</label>
+    <input type="number"
+           id="items-count"
+           name="items-count"
+           class="number-input" />
+  </p>
+
+  <p class="form-group">
+    <label for="items-max-min">Max and min items</label>
+    <input type="number"
+           id="items-max-min"
+           name="items-max-min"
+           class="number-input"
+           min="6"
+           max="18"
+           data-error-msg-min="Minimum value is 6" />
+  </p>
+
+  <p class="form-group">
+    <label for="items-step">Add 3 items</label>
+    <input type="number"
+           id="items-step"
+           name="items-step"
+           class="number-input"
+           min="2"
+           max="21"
+           step="3"
+           data-error-msg-max="Maximum value is 21" />
+  </p>
+
+  <p class="form-group">
+    <label for="items-buttons">Custom buttons</label>
+    <span class="pretty-number-input">
+      <input type="number"
+             id="items-buttons"
+             name="items-buttons"
+             class="number-input"
+             min="-2"
+             max="18"
+             step="2"
+             data-error-msg-min="Minimum value is -2"
+             data-error-msg-max="Maximum value is 18" />
+
+      <button type="button"
+              class="number-input-btn-increase"
+              title="Increase">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" height="24" width="24">
+          <path d="M198.000,154.667 L154.667,154.667 L154.667,198.000 C154.667,203.523 150.190,208.000 144.667,208.000 L111.333,208.000 C105.810,208.000 101.333,203.523 101.333,198.000 L101.333,154.667 L58.000,154.667 C52.477,154.667 48.000,150.190 48.000,144.667 L48.000,111.333 C48.000,105.810 52.477,101.333 58.000,101.333 L101.333,101.333 L101.333,58.000 C101.333,52.477 105.810,48.000 111.333,48.000 L144.667,48.000 C150.190,48.000 154.667,52.477 154.667,58.000 L154.667,101.333 L198.000,101.333 C203.523,101.333 208.000,105.810 208.000,111.333 L208.000,144.667 C208.000,150.190 203.523,154.667 198.000,154.667 Z"/>
+        </svg>
+      </button>
+      <button type="button"
+              class="number-input-btn-decrease"
+              title="Decrease">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" height="24" width="24">
+          <path d="M58.000,101.333 L198.000,101.333 C203.523,101.333 208.000,105.810 208.000,111.333 L208.000,144.667 C208.000,150.190 203.523,154.667 198.000,154.667 L58.000,154.667 C52.477,154.667 48.000,150.190 48.000,144.667 L48.000,111.333 C48.000,105.810 52.477,101.333 58.000,101.333 Z"/>
+        </svg>
+      </button>
+    </span>
+  </p>
+
+  <script type="text/javascript" src="js/script.js?v=0.1"></script>
+</body>
+</html>
